@@ -1,0 +1,24 @@
+# Core dependencies
+kivy==2.2.1
+kivymd==1.1.1
+py7zr==0.20.8
+rarfile==4.0
+lz4==4.3.2
+zstandard==0.21.0
+brotli==1.1.0
+cryptography==41.0.7
+
+# Platform specific dependencies
+pywin32==306; platform_system == "Windows"
+pyobjc-framework-Cocoa==9.2; platform_system == "Darwin"
+pyobjc-framework-Quartz==9.2; platform_system == "Darwin"
+
+# Optional but recommended
+Pillow==10.1.0  # For image handling
+python-magic-bin==0.4.14; platform_system == "Windows"  # For file type detection on Windows
+python-magic==0.4.27; platform_system != "Windows"  # For file type detection on other platforms
+
+# Additional dependencies
+tqdm==4.66.1
+py2app==0.28.6; platform_system == "Darwin"
+pyinstaller==6.3.0; platform_system == "Windows" 
